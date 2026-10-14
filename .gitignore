@@ -1,0 +1,41 @@
+# Secrets and local configuration
+.env
+.env.*
+*.json
+!.vscode/*.json
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Raw, restricted, and generated data
+data_mentah/
+data_olahan/
+hasil/
+hasil_cek.txt
+hasil_kelas.txt
+*.csv
+*.npy
+*.geojson
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+
+# Allow explicitly approved derived village datasets.
+!data/
+!data/turunan/
+!data/turunan/*.csv
+
+# Temporary and editor files
+*.tmp
+*.log
+.DS_Store
+.idea/
